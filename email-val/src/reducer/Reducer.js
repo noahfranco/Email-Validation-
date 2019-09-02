@@ -1,3 +1,4 @@
+
 import {
     FETCH_API_DATA_START, 
     FETCH_API_DATA_SUCCESS, 
@@ -11,7 +12,7 @@ const initialState = {
     error: "Something went wrong, try again later" 
 }
 
-const store = ({store = initialState, action}) => {
+const store = (store = initialState, action) => {
     switch(action.type) {
         case FETCH_API_DATA_START: 
         return {
@@ -23,7 +24,7 @@ const store = ({store = initialState, action}) => {
         return {
             ...state, 
             isLoading: ture,
-            data: [action.payload] 
+            data: action.payload, 
             error: "Success Faild"
         }
         case FETCH_API_DATA_FAILURE: 
