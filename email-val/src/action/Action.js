@@ -10,7 +10,11 @@ const GetData = () => {
     .get("")
     .then(res => {
         console.log(res)
+    dispatch({type: FETCH_API_DATA_SUCCESS})
     })
-}
+    .catch(error => {
+        dispatch({type: FETCH_API_DATA_FAILER})
+    }); 
+};
 
 export default GetData

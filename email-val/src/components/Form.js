@@ -18,7 +18,7 @@ const EmailInput = () => {
         <input 
             tpye="test"
             placeholder="Input Email"
-            // value={}    
+            value={input}    
             onChange={handleChange}   
          /> 
         <button onClick={handleChange}> Test </button> 

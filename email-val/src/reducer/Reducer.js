@@ -12,7 +12,7 @@ const initialState = {
     error: "Something went wrong, try again later" 
 }
 
-const store = (store = initialState, action) => {
+export const Reducer = (state = initialState, action) => {
     switch(action.type) {
         case FETCH_API_DATA_START: 
         return {
