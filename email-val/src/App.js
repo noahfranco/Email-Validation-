@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import EmailInput from './components/EmailInput';
+import EmailInput from './components/Form';
 
 function App() {
   return (
